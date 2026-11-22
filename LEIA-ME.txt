@@ -1,0 +1,13 @@
+Prompt para formatar tabelas jurídicas no Word
+
+Para compilar em LaTeX e obter PDF
+Importe o ZIP como projeto no Overleaf. Selecione XeLaTeX como compilador e main.tex como arquivo principal.
+Em uma instalação local de TeX Live ou MiKTeX, use xelatex main.tex duas vezes.
+O arquivo main.tex contém todo o texto, as cores, os sublinhados e a estrutura do documento.
+O LaTeX recompõe as linhas e páginas de acordo com a fonte disponível. O código procura Calibri, depois Carlito e, por fim, Latin Modern Sans.
+
+Para gerar o documento Word editável
+Extraia o ZIP. Dentro desta pasta, execute python gerar_word.py (Python 3.8 ou superior).
+O resultado será Prompt.docx. Para outro nome, execute python gerar_word.py Minha_copia.docx.
+O texto e a formatação ficam em fonte_word/word/document.xml. A pasta contém também os estilos, a numeração e os demais componentes originais.
+As fontes para LaTeX e Word são independentes. Edite a correspondente ao seu formato de saída.

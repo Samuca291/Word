@@ -1,0 +1,3040 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:mo="http://schemas.microsoft.com/office/mac/office/2008/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mv="urn:schemas-microsoft-com:mac:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 wp14">
+  <w:body>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Title"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Prompt para formatar tabelas jurídicas no Word</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>Crie uma tabela comparativa editável no Microsoft Word (.docx) a partir do conteúdo que forneço ao final. Se eu já fornecer a tabela de destino, formate as células existentes e preserve o texto, a ordem, os números e as referências. Use a tabela de autocomposição, TAC e suspensão condicional da sindicância como modelo visual, quando estiver anexada.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>Se houver correspondência de trecho e de função com o modelo, copie a formatação daquele trecho, inclusive a cor da linha de sublinhado. Para conteúdo novo, use as regras e os exemplos deste prompt. A pergunta da primeira coluna determina quais palavras merecem destaque.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Página e grade</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t xml:space="preserve">Página. </w:t>
+      </w:r>
+      <w:r>
+        <w:t>Use A4 em retrato, margens nominais de 2,5 cm acima e abaixo e 3 cm nas laterais. Centralize a tabela, use largura fixa de 18,47 cm e desative o autoajuste ao conteúdo. No original, a tabela é flutuante e ultrapassa a área nominal entre as margens. Para uma cópia exata, duplique a tabela e conserve sua ancoragem.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t xml:space="preserve">Colunas. </w:t>
+      </w:r>
+      <w:r>
+        <w:t>No modelo de quatro colunas, reserve 3,09 cm para CRITÉRIO e cerca de 5,13 cm para cada instituto. As medidas exatas em vigésimos de ponto são 1751, 2906, 2906 e 2907, totalizando 10470. Se eu pedir outra quantidade de institutos, mantenha a primeira coluna estreita e divida o restante igualmente.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t xml:space="preserve">Grade e preenchimento. </w:t>
+      </w:r>
+      <w:r>
+        <w:t>Use bordas simples de 0,5 pt em #9CA3AF em todos os lados de todas as células. Aplique fundo branco #FFFFFF ao critério 1 e cinza muito claro #F8FAFC ao critério 2. Alterne por critério até o final, inclusive na primeira coluna e nas continuações de página.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t xml:space="preserve">Posicionamento do modelo. </w:t>
+      </w:r>
+      <w:r>
+        <w:t>Se precisar reconstruir o posicionamento original no Word, use alinhamento horizontal centralizado em relação à margem, posição vertical de −10,18 cm em relação ao texto e distância de 0,25 cm do texto à esquerda e à direita. Preserve a largura fixa ao configurar a posição.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Cabeçalho e corpo</w:t>
+      </w:r>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="10470" w:type="dxa"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+        </w:tblBorders>
+        <w:tblLayout w:type="fixed"/>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+        <w:jc w:val="center"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="1751"/>
+        <w:gridCol w:w="2906"/>
+        <w:gridCol w:w="2906"/>
+        <w:gridCol w:w="2907"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="00AF7E05" w:rsidRPr="00AF7E05" w14:paraId="32068627" w14:textId="77777777" w:rsidTr="004428B2">
+        <w:trPr>
+          <w:cantSplit/>
+          <w:tblHeader/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1751" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="9CA3AF"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="9CA3AF"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="9CA3AF"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="9CA3AF"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="1F2937"/>
+            <w:tcMar>
+              <w:top w:w="90" w:type="dxa"/>
+              <w:left w:w="100" w:type="dxa"/>
+              <w:bottom w:w="90" w:type="dxa"/>
+              <w:right w:w="100" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w14:paraId="6366BCD5" w14:textId="77777777" w:rsidR="00AF7E05" w:rsidRPr="00AF7E05" w:rsidRDefault="00AF7E05" w:rsidP="00AF7E05">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+                <w:color w:val="1F2937"/>
+                <w:kern w:val="0"/>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+                <w:lang w:eastAsia="pt-BR"/>
+                <w14:ligatures w14:val="none"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00AF7E05">
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:kern w:val="0"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="18"/>
+                <w:lang w:eastAsia="pt-BR"/>
+                <w14:ligatures w14:val="none"/>
+              </w:rPr>
+              <w:t>CRITÉRIO</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2906" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="9CA3AF"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="9CA3AF"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="9CA3AF"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="9CA3AF"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="0369A1"/>
+            <w:tcMar>
+              <w:top w:w="90" w:type="dxa"/>
+              <w:left w:w="100" w:type="dxa"/>
+              <w:bottom w:w="90" w:type="dxa"/>
+              <w:right w:w="100" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w14:paraId="77672C6A" w14:textId="77777777" w:rsidR="00AF7E05" w:rsidRPr="00AF7E05" w:rsidRDefault="00AF7E05" w:rsidP="00AF7E05">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+                <w:color w:val="1F2937"/>
+                <w:kern w:val="0"/>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+                <w:lang w:eastAsia="pt-BR"/>
+                <w14:ligatures w14:val="none"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00AF7E05">
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:kern w:val="0"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="18"/>
+                <w:lang w:eastAsia="pt-BR"/>
+                <w14:ligatures w14:val="none"/>
+              </w:rPr>
+              <w:t>AUTOCOMPOSIÇÃO (PRÁTICAS AUTOCOMPOSITIVAS)</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="4C1FD412" w14:textId="77777777" w:rsidR="00AF7E05" w:rsidRPr="00AF7E05" w:rsidRDefault="00AF7E05" w:rsidP="00AF7E05">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+                <w:color w:val="1F2937"/>
+                <w:kern w:val="0"/>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+                <w:lang w:eastAsia="pt-BR"/>
+                <w14:ligatures w14:val="none"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00AF7E05">
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:kern w:val="0"/>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+                <w:lang w:eastAsia="pt-BR"/>
+                <w14:ligatures w14:val="none"/>
+              </w:rPr>
+              <w:t>ARTS. 267-A A 267-D E 267-O</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2906" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="9CA3AF"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="9CA3AF"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="9CA3AF"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="9CA3AF"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="4338CA"/>
+            <w:tcMar>
+              <w:top w:w="90" w:type="dxa"/>
+              <w:left w:w="100" w:type="dxa"/>
+              <w:bottom w:w="90" w:type="dxa"/>
+              <w:right w:w="100" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w14:paraId="7C17903A" w14:textId="77777777" w:rsidR="00AF7E05" w:rsidRPr="00AF7E05" w:rsidRDefault="00AF7E05" w:rsidP="00AF7E05">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+                <w:color w:val="1F2937"/>
+                <w:kern w:val="0"/>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+                <w:lang w:eastAsia="pt-BR"/>
+                <w14:ligatures w14:val="none"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00AF7E05">
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:kern w:val="0"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="18"/>
+                <w:lang w:eastAsia="pt-BR"/>
+                <w14:ligatures w14:val="none"/>
+              </w:rPr>
+              <w:t>TERMO DE AJUSTAMENTO DE CONDUTA (TAC)</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="2F04EB2C" w14:textId="77777777" w:rsidR="00AF7E05" w:rsidRPr="00AF7E05" w:rsidRDefault="00AF7E05" w:rsidP="00AF7E05">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+                <w:color w:val="1F2937"/>
+                <w:kern w:val="0"/>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+                <w:lang w:eastAsia="pt-BR"/>
+                <w14:ligatures w14:val="none"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00AF7E05">
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:kern w:val="0"/>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+                <w:lang w:eastAsia="pt-BR"/>
+                <w14:ligatures w14:val="none"/>
+              </w:rPr>
+              <w:t>ARTS. 267-A E 267-E A 267-M</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2907" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="9CA3AF"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="9CA3AF"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="9CA3AF"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="9CA3AF"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="475569"/>
+            <w:tcMar>
+              <w:top w:w="90" w:type="dxa"/>
+              <w:left w:w="100" w:type="dxa"/>
+              <w:bottom w:w="90" w:type="dxa"/>
+              <w:right w:w="100" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w14:paraId="6ABEB240" w14:textId="77777777" w:rsidR="00AF7E05" w:rsidRPr="00AF7E05" w:rsidRDefault="00AF7E05" w:rsidP="00AF7E05">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+                <w:color w:val="1F2937"/>
+                <w:kern w:val="0"/>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+                <w:lang w:eastAsia="pt-BR"/>
+                <w14:ligatures w14:val="none"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00AF7E05">
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:kern w:val="0"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="18"/>
+                <w:lang w:eastAsia="pt-BR"/>
+                <w14:ligatures w14:val="none"/>
+              </w:rPr>
+              <w:t>SUSPENSÃO CONDICIONAL DA SINDICÂNCIA</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="30C93517" w14:textId="77777777" w:rsidR="00AF7E05" w:rsidRPr="00AF7E05" w:rsidRDefault="00AF7E05" w:rsidP="00AF7E05">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+                <w:color w:val="1F2937"/>
+                <w:kern w:val="0"/>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+                <w:lang w:eastAsia="pt-BR"/>
+                <w14:ligatures w14:val="none"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00AF7E05">
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:kern w:val="0"/>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+                <w:lang w:eastAsia="pt-BR"/>
+                <w14:ligatures w14:val="none"/>
+              </w:rPr>
+              <w:t>ARTS. 267-A E 267-N A 267-P</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t xml:space="preserve">Cabeçalho. </w:t>
+      </w:r>
+      <w:r>
+        <w:t>Use, da esquerda para a direita, #1F2937, #0369A1, #4338CA e #475569 como fundos. Centralize horizontal e verticalmente. Escreva títulos em Calibri 9 pt, branco #FFFFFF, CAIXA ALTA e negrito. Em cada coluna de instituto, ponha os artigos em um segundo parágrafo, também branco, em caixa alta e negrito, com 8,5 pt. Use entrelinha simples, 0 pt depois e sem sublinhado.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t xml:space="preserve">Corpo. </w:t>
+      </w:r>
+      <w:r>
+        <w:t>Na primeira coluna, use número, ponto e nome em caixa de frase, Calibri 10 pt, negrito, #111827, centralizado nos dois eixos, entrelinha 1,05 e 0 pt depois. Nas demais, use Calibri 8,5 pt, #1F2937, alinhamento à esquerda e ao topo, entrelinha múltipla 1,05, 0 pt antes e 2,5 pt depois. Aplique o destaque dentro da frase.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t xml:space="preserve">Espaçamento e paginação. </w:t>
+      </w:r>
+      <w:r>
+        <w:t>Use 5 pt de margem interna de cada lado. Acima e abaixo, use 4,5 pt no cabeçalho e 3,5 pt no corpo. Repita o cabeçalho em cada página e mantenha-o inteiro. Permita altura automática e divisão das linhas de conteúdo entre páginas. Inicie pela tabela, como no modelo.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t xml:space="preserve">Tratamento do texto. </w:t>
+      </w:r>
+      <w:r>
+        <w:t>Use cores de fonte e de sublinhado personalizadas pelos códigos hexadecimais. Reserve o sombreamento para os fundos das células. O modelo usa fonte regular ou negrito, sem itálico, tachado ou marca-texto. Onde o contexto não indicar destaque, use o corpo regular.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:br w:type="page"/>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Organização dos critérios e das células</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>Para uma comparação do mesmo tipo, use a ordem abaixo. Cada linha responde à mesma pergunta para todos os institutos. Em outro assunto, adapte os critérios ao conteúdo que eu fornecer e conserve a lógica comparativa.</w:t>
+      </w:r>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="auto" w:w="0"/>
+        <w:jc w:val="center"/>
+        <w:tblLayout w:type="fixed"/>
+        <w:tblLook w:firstColumn="1" w:firstRow="1" w:lastColumn="0" w:lastRow="0" w:noHBand="0" w:noVBand="1" w:val="04A0"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="4" w:color="CBD5E1"/>
+          <w:left w:val="single" w:sz="4" w:color="CBD5E1"/>
+          <w:bottom w:val="single" w:sz="4" w:color="CBD5E1"/>
+          <w:right w:val="single" w:sz="4" w:color="CBD5E1"/>
+          <w:insideH w:val="single" w:sz="4" w:color="CBD5E1"/>
+          <w:insideV w:val="single" w:sz="4" w:color="CBD5E1"/>
+        </w:tblBorders>
+        <w:tblCellMar>
+          <w:top w:w="62" w:type="dxa"/>
+          <w:bottom w:w="62" w:type="dxa"/>
+          <w:left w:w="115" w:type="dxa"/>
+          <w:right w:w="115" w:type="dxa"/>
+        </w:tblCellMar>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="3713"/>
+        <w:gridCol w:w="6758"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:trPr>
+          <w:tblHeader/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="3713"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="1F2937"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Critério na primeira coluna</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="6758"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="1F2937"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Informação a comparar</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="3713"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>1. Base legal</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="6758"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Agrupe regras centrais, normas relacionadas e redações ou alterações informadas.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="3713"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>2. O que é</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="6758"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Dê a definição e desdobre em espécies, obrigações ou princípios, quando couber.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="3713"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>3. Quem pode propor ou iniciar</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="6758"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Indique quem pode iniciar, por qual via e mediante qual ato.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="3713"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>4. Quem conduz, fiscaliza ou executa</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="6758"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Distinga a condução das sessões ou do procedimento da fiscalização do cumprimento.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="3713"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>5. Quem decide ou homologa</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="6758"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Identifique quem decide ou homologa e sobre qual ato.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="3713"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>6. Quem declara o efeito final</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="6758"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Identifique quem declara o resultado e eventual faculdade de delegar.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="3713"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>7. Quando pode ocorrer</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="6758"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Indique a fase ou o marco de início. Separe as situações que mudam a resposta.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="3713"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>8. Hipóteses de cabimento</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="6758"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Mostre os fatos ou situações em que a medida cabe.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="3713"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>9. Condições e requisitos</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="6758"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Liste os requisitos, mantendo explícitas as alternativas e a cumulação.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="3713"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>10. Conteúdo, condições impostas e formalidades</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="6758"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Separe as cláusulas, as condições impostas e a forma exigida.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="3713"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>11. Prazo</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="6758"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Diferencie duração, prazo máximo, carência e marco da contagem.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="3713"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>12. Prescrição ou decadência</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="6758"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Informe quando a contagem corre, deixa de correr ou fica suspensa, conforme a fonte.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="3713"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>13. Efeito do cumprimento</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="6758"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Aponte o efeito principal e eventual efeito alternativo.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="3713"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>14. Descumprimento</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="6758"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Relacione cada fato de descumprimento à providência ou consequência correspondente.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="3713"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>15. Vedações e restrições</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="6758"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Identifique proibições, sigilo, restrições de uso e limites ao benefício, se pertinentes.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Redação dentro da célula</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>Use prosa curta para uma regra única, marcadores reais do Word (•) para itens paralelos e listas numeradas (1., 2., 3.) para séries de obrigações ou requisitos. Reinicie a numeração a cada lista independente. O recuo predominante é 10 pt à esquerda com 8,5 pt de deslocamento francês. Para princípios em linha, separe os nomes por “ · ” em cor de texto.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>Mantenha a referência junto da afirmação que ela fundamenta, em caixa normal e corpo regular, como “(art. 267-B, §1º)”. Preserve siglas, algarismos, incisos, o sinal § e a grafia da fonte. Use “NÃO PREVISTO” para ausência de previsão sustentada pelo material. Se faltar informação para concluir, sinalize a lacuna sem atribuí-la à lei.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>Use rótulos breves, como “Delegação”, “Efeito alternativo” ou “Carência”, seguidos da respectiva resposta. Se o material tiver uma sequência didática de perguntas e respostas, mantenha um parágrafo por situação. Os marcadores e os números das listas ficam, em regra, em cor de corpo.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="60" w:before="0" w:line="264" w:lineRule="auto"/>
+        <w:ind w:left="238" w:right="198"/>
+      </w:pPr>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Princípios (art. 267-B, caput): </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="0070C0"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:u w:val="single" w:color="111827"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>VOLUNTARIEDADE</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="0070C0"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve">· </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="0070C0"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:u w:val="single" w:color="111827"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>CORRESPONSABILIDADE</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="0070C0"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve">· </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="0070C0"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:u w:val="single" w:color="111827"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>REPARAÇÃO DO DANO</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="0070C0"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve">· </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="0070C0"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:u w:val="single" w:color="111827"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>CONFIDENCIALIDADE</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="0070C0"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve">· </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="0070C0"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:u w:val="single" w:color="111827"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>INFORMALIDADE</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="0070C0"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve">· </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="0070C0"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:u w:val="single" w:color="111827"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>CONSENSUALIDADE</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="0070C0"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve">· </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="0070C0"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:u w:val="single" w:color="111827"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>CELERIDADE</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:br w:type="page"/>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Cores da fonte e uso do sublinhado</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>Escolha o menor trecho que carrega a informação. Nas duas colunas de destaque abaixo, use CAIXA ALTA + negrito + a cor indicada. Acrescente sublinhado simples apenas nas situações descritas na última coluna. Os exemplos são usos observados no modelo e orientam trechos equivalentes.</w:t>
+      </w:r>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="auto" w:w="0"/>
+        <w:jc w:val="center"/>
+        <w:tblLayout w:type="fixed"/>
+        <w:tblLook w:firstColumn="1" w:firstRow="1" w:lastColumn="0" w:lastRow="0" w:noHBand="0" w:noVBand="1" w:val="04A0"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="4" w:color="CBD5E1"/>
+          <w:left w:val="single" w:sz="4" w:color="CBD5E1"/>
+          <w:bottom w:val="single" w:sz="4" w:color="CBD5E1"/>
+          <w:right w:val="single" w:sz="4" w:color="CBD5E1"/>
+          <w:insideH w:val="single" w:sz="4" w:color="CBD5E1"/>
+          <w:insideV w:val="single" w:sz="4" w:color="CBD5E1"/>
+        </w:tblBorders>
+        <w:tblCellMar>
+          <w:top w:w="62" w:type="dxa"/>
+          <w:bottom w:w="62" w:type="dxa"/>
+          <w:left w:w="115" w:type="dxa"/>
+          <w:right w:w="115" w:type="dxa"/>
+        </w:tblCellMar>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="1559"/>
+        <w:gridCol w:w="4734"/>
+        <w:gridCol w:w="4178"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:trPr>
+          <w:tblHeader/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1559"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="1F2937"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Cor da fonte</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="4734"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="1F2937"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Uso sem sublinhado</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="4178"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="1F2937"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Quando acrescentar sublinhado</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1559"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Azul</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="0070C0"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>#0070C0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="4734"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Conceito, identificação ou campo do documento. O modelo usa PRÁTICAS AUTOCOMPOSITIVAS, JUÍZO DE ADMISSIBILIDADE, QUALIFICAÇÃO e OBRIGAÇÕES ASSUMIDAS.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="4178"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Identificação ou termo técnico posto em foco, como FUNCIONÁRIO, HOMOLOGADO, CARGO, FUNÇÃO, DECRETO e ASSENTOS FUNCIONAIS. Os princípios têm linha escura própria.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1559"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Verde vivo</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="00B050"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>#00B050</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="4734"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Resultado, fato ou objeto apresentado em bloco, como EXTINÇÃO DA PUNIBILIDADE, MITIGAÇÃO DA SANÇÃO, AUTORIA e MATERIALIDADE.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="4178"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Espécies, obrigações, requisitos, penas e termos a distinguir, como MEDIAÇÃO, AJUSTAR SUA CONDUTA, DOLO, MÁ-FÉ e REPARAR O DANO. Também aparece em agentes e competências específicos.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1559"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Verde escuro</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="047857"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>#047857</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="4734"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Duração, frequência, marco ou intervalo, como 1 A 2 ANOS, TRIMESTRAIS, DOBRO DO PRAZO e DURANTE O PERÍODO DA SUSPENSÃO.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="4178"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Em limites selecionados, como ÚLTIMOS 3 ANOS e o núcleo de PRAZO MÁXIMO DE 2 ANOS. Também em agentes nomeados, como CONTROLADORIA GERAL DO ESTADO.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1559"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Violeta</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="7E22CE"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>#7E22CE</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="4734"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Faculdade, condição, modo, obrigatoriedade ou exclusividade, como PODE, SE HOUVER, DESDE QUE, É NECESSÁRIO, CUMULATIVAMENTE e EXCLUSIVAMENTE. Inclui DESPACHO FUNDAMENTADO quando exigido para a iniciativa.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="4178"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Conserve esses destaques sem sublinhado, como no modelo.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1559"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Roxo</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="7030A0"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>#7030A0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="4734"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Reserve esta cor para as conjunções destacadas. Deixe as conjunções de ligação na forma corrente ou na cor da expressão que as contém.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="4178"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Sublinhe E ou OU quando o conectivo tiver destaque próprio e unir elementos decisivos. Observe DOLO OU MÁ-FÉ e CARGO OU FUNÇÃO.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1559"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Vermelho escuro</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="DC2626"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>#DC2626</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="4734"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Negação, ausência de previsão, revogação, vedação ou sigilo, como NÃO, NÃO PREVISTO, NÃO CORRE, REVOGADO, REVOGADA, VEDADO, SEM, NEM e SIGILOSO.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="4178"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Sublinhe NÃO PODE na linha de descumprimento da autocomposição. A mesma expressão aparece sem linha na linha de vedações.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1559"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Vermelho vivo</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="FF0000"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>#FF0000</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="4734"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Ações ou marcos destacados, como COMPROMETE, CONDUZIDAS, INDEFERIDO, CONTADO, EXPIRADO, SUBMETE, PROSSEGUE e REGISTRO.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="4178"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Sublinhe a ação ou a palavra decisiva conforme a passagem, como PROPOR, PROPOSTA, IMPLICA, DECLARAÇÃO e RECUSA. Na sequência didática do TAC, também ANTES e NÃO.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1559"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Laranja</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="EA580C"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>#EA580C</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="4734"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Momento, forma de cabimento ou hipótese em foco, como DESDE LOGO, EM QUALQUER FASE, APÓS A EXPEDIÇÃO DA PORTARIA DE INSTAURAÇÃO DA SINDICÂNCIA e CONFLITOS INTERPESSOAIS.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="4178"/>
+            <w:vAlign w:val="center"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="F8FAFC"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:line="250" w:lineRule="auto" w:after="0" w:before="0"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:color w:val="1F2937"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>Conserve o laranja sem sublinhado. Em ALTERNATIVA OU CONCORRENTE, apenas OU recebe roxo e sublinhado.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Cor do traço</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>Como padrão, use sublinhado simples na cor da fonte. Nos sete princípios da autocomposição, a fonte é azul #0070C0 e o traço é #111827. Em trechos de competência, o traço pode ser verde-escuro #047857 sob letras azuis, verdes ou roxas. Aplique a cor do traço independentemente da cor da letra e somente às palavras efetivamente sublinhadas.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:br w:type="page"/>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Como aplicar os destaques dentro da frase</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>Use os pares abaixo para decidir entre cor, cor com sublinhado e texto corrente. Repita a combinação de cada trecho quando a informação desempenhar a mesma função.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>A mesma hipótese em dois critérios</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="60" w:before="0" w:line="264" w:lineRule="auto"/>
+        <w:ind w:left="238" w:right="198"/>
+      </w:pPr>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="7E22CE"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:lastRenderedPageBreak/>
+        <w:t>PODE</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> ser adotado nos casos de </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="EA580C"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>EXTRAVIO OU DANO A BEM PÚBLICO</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> que </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="DC2626"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>NÃO</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> tenham decorrido de </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:lastRenderedPageBreak/>
+        <w:t>conduta dolosa do funcionário (art. 267-E, parágrafo único).</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="60" w:before="0" w:line="264" w:lineRule="auto"/>
+        <w:ind w:left="238" w:right="198"/>
+      </w:pPr>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Cabe em </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="00B050"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:u w:val="single"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>EXTRAVIO</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="00B050"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="7030A0"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:u w:val="single"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>OU</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="7030A0"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="00B050"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:u w:val="single"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>DANO A BEM PÚBLICO</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> que </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="DC2626"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>NÃO</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> tenha decorrido de </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="0070C0"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>CONDUTA DOLOSA</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="0070C0"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>(art. 267-E, parágrafo único)</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>Em “Hipóteses de cabimento”, toda a expressão EXTRAVIO OU DANO A BEM PÚBLICO é laranja e sem linha, inclusive OU. Em “Vedações e restrições”, sublinhe EXTRAVIO e DANO A BEM PÚBLICO em verde vivo e OU em roxo. Nos dois casos, NÃO recebe vermelho escuro sem linha.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Sujeito, objeto, faculdade e ação</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="60" w:before="0" w:line="264" w:lineRule="auto"/>
+        <w:ind w:left="238" w:right="198"/>
+      </w:pPr>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="0070C0"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:u w:val="single" w:color="047857"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>AUTORIDADE</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="0070C0"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:u w:color="047857"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:u w:color="047857"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve">que tiver </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="00B050"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:u w:val="single" w:color="047857"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>CONHECIMENTO DA IRREGULARIDADE</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="00B050"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="7E22CE"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>PODE</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="FF0000"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:u w:val="single"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>PROPOR</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="FF0000"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>a celebração (art. 264, caput)</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>Sublinhe AUTORIDADE em azul com traço verde-escuro e CONHECIMENTO DA IRREGULARIDADE em verde vivo com o mesmo traço. PODE fica violeta sem linha. PROPOR fica vermelho vivo com linha da mesma cor. Deixe “que tiver”, “a celebração” e a referência em escrita corrente.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Ação, vínculo e resultado</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="60" w:before="0" w:line="264" w:lineRule="auto"/>
+        <w:ind w:left="238" w:right="198"/>
+      </w:pPr>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve">O </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="FF0000"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>CUMPRIMENTO</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="FF0000"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve">das condições </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="FF0000"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:u w:val="single"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>IMPLICA</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="FF0000"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve">a </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="00B050"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>EXTINÇÃO DA PUNIBILIDADE</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="00B050"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>(art. 267-J, caput).</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>CUMPRIMENTO e IMPLICA têm a mesma fonte vermelha viva em caixa alta e negrito. Sublinhe apenas IMPLICA. O efeito EXTINÇÃO DA PUNIBILIDADE fica em verde vivo, sem linha. Em outro critério, o rótulo CUMPRIMENTO que introduz os limites de prazo é azul sem linha.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Limite numérico e unidade</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="60" w:before="0" w:line="264" w:lineRule="auto"/>
+        <w:ind w:left="238" w:right="198"/>
+      </w:pPr>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="0070C0"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>CUMPRIMENTO</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve">: </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="DC2626"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>NÃO</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> inferior a </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="00B050"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:u w:val="single"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>1 ANO</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve">, </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="DC2626"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>NEM</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> superior a </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="00B050"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:u w:val="single"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>2 ANOS</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="00B050"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AF7E05">
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri" w:cs="Calibri"/>
+          <w:color w:val="1F2937"/>
+          <w:kern w:val="0"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:eastAsia="pt-BR"/>
+          <w14:ligatures w14:val="none"/>
+        </w:rPr>
+        <w:t>(art. 267-I, parágrafo único).</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>Sublinhe cada número junto com a unidade em verde vivo e mantenha NÃO e NEM em vermelho escuro sem linha. A duração escrita como bloco “1 A 2 ANOS” é verde-escura e sem linha. Em “PRAZO MÁXIMO DE 2 ANOS”, há uma ocorrência com MÁXIMO e DE 2 ANOS sublinhados e outra com o bloco inteiro sem linha.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Exceções de caixa e de ênfase</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>Mantenha “irregularidade” e “funcionário interessado” em minúsculas, cor de corpo e sublinhado simples nas passagens correspondentes do TAC. Em “suas atividades”, some negrito ao mesmo tratamento. Na sequência de perguntas e respostas sobre quando propor o TAC, preserve o negrito de apoio em trechos explicativos e “apurá-la” em minúsculas, vermelho vivo e negrito, sem linha.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>Leia a frase antes de marcar palavras repetidas. DESPACHO FUNDAMENTADO é violeta sem linha quando expressa uma exigência para propor a medida e azul sublinhado quando identifica a formalidade do encaminhamento. Artigos, preposições, pontuação e espaços seguem em geral o texto corrente. Preserve a marcação peculiar do modelo quando copiar um trecho idêntico.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Conferência e entrega</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>Revise cada célula no Word. Confira os fundos, a ordem dos critérios, as referências e os destaques, inclusive os conectivos e a cor do sublinhado. Entregue a tabela editável com formatação real por trecho, sem códigos de cor, etiquetas, marcadores de Markdown ou legenda adicionada ao quadro.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t xml:space="preserve">Material de entrada. </w:t>
+      </w:r>
+      <w:r>
+        <w:t>[Cole aqui o conteúdo ou indique o arquivo a formatar e os institutos que deseja comparar.]</w:t>
+      </w:r>
+    </w:p>
+    <w:sectPr w:rsidR="00FC693F" w:rsidRPr="0006063C" w:rsidSect="00034616">
+      <w:footerReference w:type="default" r:id="rId9"/>
+      <w:pgSz w:w="11906" w:h="16838"/>
+      <w:pgMar w:top="896" w:right="717" w:bottom="879" w:left="717" w:header="720" w:footer="397" w:gutter="0"/>
+      <w:cols w:space="720"/>
+      <w:docGrid w:linePitch="360"/>
+    </w:sectPr>
+  </w:body>
+</w:document>

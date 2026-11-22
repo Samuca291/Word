@@ -1,0 +1,246 @@
+% !TeX program = xelatex
+% Código-fonte integral em UTF-8. Compile este arquivo com XeLaTeX.
+\documentclass[a4paper,10pt]{article}
+\usepackage{fontspec,geometry,xcolor,tabularray}
+% Calibri, quando instalada. Carlito tem métricas compatíveis.
+\IfFontExistsTF{Calibri}{\setmainfont{Calibri}}{%
+  \IfFontExistsTF{Carlito}{\setmainfont{Carlito}}{\setmainfont{Latin Modern Sans}}}
+\defaultfontfeatures{Ligatures=TeX}
+
+\definecolor{texto}{HTML}{1F2937}
+\definecolor{preto}{HTML}{000000}
+\definecolor{escuro}{HTML}{111827}
+\definecolor{azul}{HTML}{0070C0}
+\definecolor{verdeVivo}{HTML}{00B050}
+\definecolor{verdeEscuro}{HTML}{047857}
+\definecolor{violeta}{HTML}{7E22CE}
+\definecolor{roxo}{HTML}{7030A0}
+\definecolor{vermelhoEscuro}{HTML}{DC2626}
+\definecolor{vermelhoVivo}{HTML}{FF0000}
+\definecolor{laranja}{HTML}{EA580C}
+\definecolor{branco}{HTML}{FFFFFF}
+\definecolor{fundoClaro}{HTML}{F8FAFC}
+\definecolor{grade}{HTML}{9CA3AF}
+\definecolor{cabAzul}{HTML}{0369A1}
+\definecolor{cabIndigo}{HTML}{4338CA}
+\definecolor{cabCinza}{HTML}{475569}
+\definecolor{gradeGuia}{HTML}{CBD5E1}
+
+% A cor da letra e a da linha são independentes. A linha pode quebrar entre palavras.
+\newcommand{\Destaque}[2]{{\bfseries\textcolor{#1}{#2}}}
+\ExplSyntaxOn
+\seq_new:N \l_documento_palavras_seq
+\cs_new_protected:Npn \documento_linha:nnn #1#2#3
+  {
+    \seq_set_split:Nnn \l_documento_palavras_seq { ~ } {#3}
+    \seq_map_indexed_inline:Nn \l_documento_palavras_seq
+      {
+        \int_compare:nNnT {##1} > {1}
+          { {\color{#2}\leaders\hrule height -1.55pt depth 1.95pt\hskip\fontdimen2\font\relax} }
+        \textcolor{#2}{\underline{\textcolor{#1}{##2}}}
+      }
+  }
+\NewDocumentCommand{\Linha}{mmm}{\documento_linha:nnn{#1}{#2}{#3}}
+\NewDocumentCommand{\Sublinhado}{mmm}{{\bfseries\documento_linha:nnn{#1}{#2}{#3}}}
+\ExplSyntaxOff
+\newcommand{\Item}[3]{\hangindent=#1\relax\hangafter=1\noindent
+  \makebox[#1][l]{#2}#3\par}
+\newcommand{\Proximo}{\par\vspace{2.5bp}\noindent}
+\newcommand{\Titulo}[1]{\par\noindent{\color{preto}\fontsize{22bp}{25bp}\selectfont\bfseries #1\par}\vspace{8bp}}
+\newcommand{\Subtitulo}[1]{\par\vspace{4bp}\noindent{\color{preto}\fontsize{14bp}{16bp}\selectfont\bfseries #1\par}\vspace{2bp}}
+\DefTblrTemplate{contfoot-text}{default}{}
+\DefTblrTemplate{conthead-text}{default}{}
+\DefTblrTemplate{caption}{default}{}
+\DefTblrTemplate{capcont}{default}{}
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{1.5em}
+\hyphenpenalty=10000
+
+\geometry{a4paper,left=1.265cm,right=1.265cm,top=1.58cm,bottom=1.55cm,footskip=0.8cm}
+\pagestyle{plain}
+\begin{document}
+\color{texto}
+\fontsize{11bp}{14.4bp}\selectfont\setlength{\parskip}{4bp}\raggedright
+\Titulo{Prompt para formatar tabelas jurídicas no Word}
+Crie uma tabela comparativa editável no Microsoft Word (.docx) a partir do conteúdo que forneço ao final. Se eu já fornecer a tabela de destino, formate as células existentes e preserve o texto, a ordem, os números e as referências. Use a tabela de autocomposição, TAC e suspensão condicional da sindicância como modelo visual, quando estiver anexada.\par
+Se houver correspondência de trecho e de função com o modelo, copie a formatação daquele trecho, inclusive a cor da linha de sublinhado. Para conteúdo novo, use as regras e os exemplos deste prompt. A pergunta da primeira coluna determina quais palavras merecem destaque.\par
+\Subtitulo{Página e grade}
+\Destaque{texto}{Página.} Use A4 em retrato, margens nominais de 2,5 cm acima e abaixo e 3 cm nas laterais. Centralize a tabela, use largura fixa de 18,47 cm e desative o autoajuste ao conteúdo. No original, a tabela é flutuante e ultrapassa a área nominal entre as margens. Para uma cópia exata, duplique a tabela e conserve sua ancoragem.\par
+\Destaque{texto}{Colunas.} No modelo de quatro colunas, reserve 3,09 cm para CRITÉRIO e cerca de 5,13 cm para cada instituto. As medidas exatas em vigésimos de ponto são 1751, 2906, 2906 e 2907, totalizando 10470. Se eu pedir outra quantidade de institutos, mantenha a primeira coluna estreita e divida o restante igualmente.\par
+\Destaque{texto}{Grade e preenchimento.} Use bordas simples de 0,5 pt em \#9CA3AF em todos os lados de todas as células. Aplique fundo branco \#FFFFFF ao critério 1 e cinza muito claro \#F8FAFC ao critério 2. Alterne por critério até o final, inclusive na primeira coluna e nas continuações de página.\par
+\Destaque{texto}{Posicionamento do modelo.} Se precisar reconstruir o posicionamento original no Word, use alinhamento horizontal centralizado em relação à margem, posição vertical de −10,18 cm em relação ao texto e distância de 0,25 cm do texto à esquerda e à direita. Preserve a largura fixa ao configurar a posição.\par
+\Subtitulo{Cabeçalho e corpo}
+
+% Grade e propriedades das células.
+\noindent\begin{tblr}{
+  width=\linewidth, colspec={X[0.57,c,m] X[1,l,h] X[1,l,h] X[1,l,h]},
+  hlines={0.5bp,grade}, vlines={0.5bp,grade},
+  colsep=5bp, rowsep=3.5bp,
+  row{1}={c,m,rowsep=4.5bp}, row{odd[3]}={bg=fundoClaro},
+  cell{1}{1}={bg=texto},
+  cell{1}{2}={bg=cabAzul},
+  cell{1}{3}={bg=cabIndigo},
+  cell{1}{4}={bg=cabCinza},
+}
+% Cabeçalho
+{{\fontsize{9bp}{10bp}\selectfont {\color{branco}\Destaque{branco}{CRITÉRIO}}\par}}
+  & {{\fontsize{9bp}{10bp}\selectfont {\color{branco}\Destaque{branco}{AUTOCOMPOSIÇÃO (PRÁTICAS AUTOCOMPOSITIVAS)}}\par}
+{\fontsize{8.5bp}{10bp}\selectfont {\color{branco}\Destaque{branco}{ARTS. 267-A A 267-D E 267-O}}\par}}
+  & {{\fontsize{9bp}{10bp}\selectfont {\color{branco}\Destaque{branco}{TERMO DE AJUSTAMENTO DE CONDUTA (TAC)}}\par}
+{\fontsize{8.5bp}{10bp}\selectfont {\color{branco}\Destaque{branco}{ARTS. 267-A E 267-E A 267-M}}\par}}
+  & {{\fontsize{9bp}{10bp}\selectfont {\color{branco}\Destaque{branco}{SUSPENSÃO CONDICIONAL DA SINDICÂNCIA}}\par}
+{\fontsize{8.5bp}{10bp}\selectfont {\color{branco}\Destaque{branco}{ARTS. 267-A E 267-N A 267-P}}\par}} \\
+\end{tblr}\par
+\Destaque{texto}{Cabeçalho.} Use, da esquerda para a direita, \#1F2937, \#0369A1, \#4338CA e \#475569 como fundos. Centralize horizontal e verticalmente. Escreva títulos em Calibri 9 pt, branco \#FFFFFF, CAIXA ALTA e negrito. Em cada coluna de instituto, ponha os artigos em um segundo parágrafo, também branco, em caixa alta e negrito, com 8,5 pt. Use entrelinha simples, 0 pt depois e sem sublinhado.\par
+\Destaque{texto}{Corpo.} Na primeira coluna, use número, ponto e nome em caixa de frase, Calibri 10 pt, negrito, \#111827, centralizado nos dois eixos, entrelinha 1,05 e 0 pt depois. Nas demais, use Calibri 8,5 pt, \#1F2937, alinhamento à esquerda e ao topo, entrelinha múltipla 1,05, 0 pt antes e 2,5 pt depois. Aplique o destaque dentro da frase.\par
+\Destaque{texto}{Espaçamento e paginação.} Use 5 pt de margem interna de cada lado. Acima e abaixo, use 4,5 pt no cabeçalho e 3,5 pt no corpo. Repita o cabeçalho em cada página e mantenha-o inteiro. Permita altura automática e divisão das linhas de conteúdo entre páginas. Inicie pela tabela, como no modelo.\par
+\Destaque{texto}{Tratamento do texto.} Use cores de fonte e de sublinhado personalizadas pelos códigos hexadecimais. Reserve o sombreamento para os fundos das células. O modelo usa fonte regular ou negrito, sem itálico, tachado ou marca-texto. Onde o contexto não indicar destaque, use o corpo regular.\par
+
+\clearpage
+\Titulo{Organização dos critérios e das células}
+Para uma comparação do mesmo tipo, use a ordem abaixo. Cada linha responde à mesma pergunta para todos os institutos. Em outro assunto, adapte os critérios ao conteúdo que eu fornecer e conserve a lógica comparativa.\par
+
+% Grade e propriedades das células.
+\noindent\begin{tblr}{
+  width=\linewidth, colspec={X[0.54,l,m] X[1,l,m]},
+  hlines={0.5bp,gradeGuia}, vlines={0.5bp,gradeGuia},
+  colsep=5.75bp, rowsep=3bp,
+  row{1}={bg=texto}, row{odd[3]}={bg=fundoClaro},
+}
+% Cabeçalho
+{\fontsize{10bp}{12bp}\selectfont {\color{branco}\Destaque{branco}{Critério na primeira coluna}}}
+  & {\fontsize{10bp}{12bp}\selectfont {\color{branco}\Destaque{branco}{Informação a comparar}}} \\
+% 1. Base legal
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{1. Base legal}}
+  & {\fontsize{10bp}{12bp}\selectfont Agrupe regras centrais, normas relacionadas e redações ou alterações informadas.} \\
+% 2. O que é
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{2. O que é}}
+  & {\fontsize{10bp}{12bp}\selectfont Dê a definição e desdobre em espécies, obrigações ou princípios, quando couber.} \\
+% 3. Quem pode propor ou iniciar
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{3. Quem pode propor ou iniciar}}
+  & {\fontsize{10bp}{12bp}\selectfont Indique quem pode iniciar, por qual via e mediante qual ato.} \\
+% 4. Quem conduz, fiscaliza ou executa
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{4. Quem conduz, fiscaliza ou executa}}
+  & {\fontsize{10bp}{12bp}\selectfont Distinga a condução das sessões ou do procedimento da fiscalização do cumprimento.} \\
+% 5. Quem decide ou homologa
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{5. Quem decide ou homologa}}
+  & {\fontsize{10bp}{12bp}\selectfont Identifique quem decide ou homologa e sobre qual ato.} \\
+% 6. Quem declara o efeito final
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{6. Quem declara o efeito final}}
+  & {\fontsize{10bp}{12bp}\selectfont Identifique quem declara o resultado e eventual faculdade de delegar.} \\
+% 7. Quando pode ocorrer
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{7. Quando pode ocorrer}}
+  & {\fontsize{10bp}{12bp}\selectfont Indique a fase ou o marco de início. Separe as situações que mudam a resposta.} \\
+% 8. Hipóteses de cabimento
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{8. Hipóteses de cabimento}}
+  & {\fontsize{10bp}{12bp}\selectfont Mostre os fatos ou situações em que a medida cabe.} \\
+% 9. Condições e requisitos
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{9. Condições e requisitos}}
+  & {\fontsize{10bp}{12bp}\selectfont Liste os requisitos, mantendo explícitas as alternativas e a cumulação.} \\
+% 10. Conteúdo, condições impostas e formalidades
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{10. Conteúdo, condições impostas e formalidades}}
+  & {\fontsize{10bp}{12bp}\selectfont Separe as cláusulas, as condições impostas e a forma exigida.} \\
+% 11. Prazo
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{11. Prazo}}
+  & {\fontsize{10bp}{12bp}\selectfont Diferencie duração, prazo máximo, carência e marco da contagem.} \\
+% 12. Prescrição ou decadência
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{12. Prescrição ou decadência}}
+  & {\fontsize{10bp}{12bp}\selectfont Informe quando a contagem corre, deixa de correr ou fica suspensa, conforme a fonte.} \\
+% 13. Efeito do cumprimento
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{13. Efeito do cumprimento}}
+  & {\fontsize{10bp}{12bp}\selectfont Aponte o efeito principal e eventual efeito alternativo.} \\
+% 14. Descumprimento
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{14. Descumprimento}}
+  & {\fontsize{10bp}{12bp}\selectfont Relacione cada fato de descumprimento à providência ou consequência correspondente.} \\
+% 15. Vedações e restrições
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{15. Vedações e restrições}}
+  & {\fontsize{10bp}{12bp}\selectfont Identifique proibições, sigilo, restrições de uso e limites ao benefício, se pertinentes.} \\
+\end{tblr}\par
+\Subtitulo{Redação dentro da célula}
+Use prosa curta para uma regra única, marcadores reais do Word (•) para itens paralelos e listas numeradas (1., 2., 3.) para séries de obrigações ou requisitos. Reinicie a numeração a cada lista independente. O recuo predominante é 10 pt à esquerda com 8,5 pt de deslocamento francês. Para princípios em linha, separe os nomes por “ · ” em cor de texto.\par
+Mantenha a referência junto da afirmação que ela fundamenta, em caixa normal e corpo regular, como “(art. 267-B, §1º)”. Preserve siglas, algarismos, incisos, o sinal § e a grafia da fonte. Use “NÃO PREVISTO” para ausência de previsão sustentada pelo material. Se faltar informação para concluir, sinalize a lacuna sem atribuí-la à lei.\par
+Use rótulos breves, como “Delegação”, “Efeito alternativo” ou “Carência”, seguidos da respectiva resposta. Se o material tiver uma sequência didática de perguntas e respostas, mantenha um parágrafo por situação. Os marcadores e os números das listas ficam, em regra, em cor de corpo.\par
+Princípios (art. 267-B, caput): \Sublinhado{azul}{escuro}{VOLUNTARIEDADE} · \Sublinhado{azul}{escuro}{CORRESPONSABILIDADE} · \Sublinhado{azul}{escuro}{REPARAÇÃO DO DANO} · \Sublinhado{azul}{escuro}{CONFIDENCIALIDADE} · \Sublinhado{azul}{escuro}{INFORMALIDADE} · \Sublinhado{azul}{escuro}{CONSENSUALIDADE} · \Sublinhado{azul}{escuro}{CELERIDADE}\par
+
+\clearpage
+\Titulo{Cores da fonte e uso do sublinhado}
+Escolha o menor trecho que carrega a informação. Nas duas colunas de destaque abaixo, use CAIXA ALTA + negrito + a cor indicada. Acrescente sublinhado simples apenas nas situações descritas na última coluna. Os exemplos são usos observados no modelo e orientam trechos equivalentes.\par
+
+% Grade e propriedades das células.
+\noindent\begin{tblr}{
+  width=\linewidth, colspec={X[0.275,l,m] X[1,l,m] X[0.868,l,m]},
+  hlines={0.5bp,gradeGuia}, vlines={0.5bp,gradeGuia},
+  colsep=5.75bp, rowsep=3bp,
+  row{1}={bg=texto}, row{odd[3]}={bg=fundoClaro},
+}
+% Cabeçalho
+{\fontsize{10bp}{12bp}\selectfont {\color{branco}\Destaque{branco}{Cor da fonte}}}
+  & {\fontsize{10bp}{12bp}\selectfont {\color{branco}\Destaque{branco}{Uso sem sublinhado}}}
+  & {\fontsize{10bp}{12bp}\selectfont {\color{branco}\Destaque{branco}{Quando acrescentar sublinhado}}} \\
+% Azul
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{Azul}\par
+\Destaque{azul}{\#0070C0}}
+  & {\fontsize{10bp}{12bp}\selectfont Conceito, identificação ou campo do documento. O modelo usa PRÁTICAS AUTOCOMPOSITIVAS, JUÍZO DE ADMISSIBILIDADE, QUALIFICAÇÃO e OBRIGAÇÕES ASSUMIDAS.}
+  & {\fontsize{10bp}{12bp}\selectfont Identificação ou termo técnico posto em foco, como FUNCIONÁRIO, HOMOLOGADO, CARGO, FUNÇÃO, DECRETO e ASSENTOS FUNCIONAIS. Os princípios têm linha escura própria.} \\
+% Verde vivo
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{Verde vivo}\par
+\Destaque{verdeVivo}{\#00B050}}
+  & {\fontsize{10bp}{12bp}\selectfont Resultado, fato ou objeto apresentado em bloco, como EXTINÇÃO DA PUNIBILIDADE, MITIGAÇÃO DA SANÇÃO, AUTORIA e MATERIALIDADE.}
+  & {\fontsize{10bp}{12bp}\selectfont Espécies, obrigações, requisitos, penas e termos a distinguir, como MEDIAÇÃO, AJUSTAR SUA CONDUTA, DOLO, MÁ-FÉ e REPARAR O DANO. Também aparece em agentes e competências específicos.} \\
+% Verde escuro
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{Verde escuro}\par
+\Destaque{verdeEscuro}{\#047857}}
+  & {\fontsize{10bp}{12bp}\selectfont Duração, frequência, marco ou intervalo, como 1 A 2 ANOS, TRIMESTRAIS, DOBRO DO PRAZO e DURANTE O PERÍODO DA SUSPENSÃO.}
+  & {\fontsize{10bp}{12bp}\selectfont Em limites selecionados, como ÚLTIMOS 3 ANOS e o núcleo de PRAZO MÁXIMO DE 2 ANOS. Também em agentes nomeados, como CONTROLADORIA GERAL DO ESTADO.} \\
+% Violeta
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{Violeta}\par
+\Destaque{violeta}{\#7E22CE}}
+  & {\fontsize{10bp}{12bp}\selectfont Faculdade, condição, modo, obrigatoriedade ou exclusividade, como PODE, SE HOUVER, DESDE QUE, É NECESSÁRIO, CUMULATIVAMENTE e EXCLUSIVAMENTE. Inclui DESPACHO FUNDAMENTADO quando exigido para a iniciativa.}
+  & {\fontsize{10bp}{12bp}\selectfont Conserve esses destaques sem sublinhado, como no modelo.} \\
+% Roxo
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{Roxo}\par
+\Destaque{roxo}{\#7030A0}}
+  & {\fontsize{10bp}{12bp}\selectfont Reserve esta cor para as conjunções destacadas. Deixe as conjunções de ligação na forma corrente ou na cor da expressão que as contém.}
+  & {\fontsize{10bp}{12bp}\selectfont Sublinhe E ou OU quando o conectivo tiver destaque próprio e unir elementos decisivos. Observe DOLO OU MÁ-FÉ e CARGO OU FUNÇÃO.} \\
+% Vermelho escuro
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{Vermelho escuro}\par
+\Destaque{vermelhoEscuro}{\#DC2626}}
+  & {\fontsize{10bp}{12bp}\selectfont Negação, ausência de previsão, revogação, vedação ou sigilo, como NÃO, NÃO PREVISTO, NÃO CORRE, REVOGADO, REVOGADA, VEDADO, SEM, NEM e SIGILOSO.}
+  & {\fontsize{10bp}{12bp}\selectfont Sublinhe NÃO PODE na linha de descumprimento da autocomposição. A mesma expressão aparece sem linha na linha de vedações.} \\
+% Vermelho vivo
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{Vermelho vivo}\par
+\Destaque{vermelhoVivo}{\#FF0000}}
+  & {\fontsize{10bp}{12bp}\selectfont Ações ou marcos destacados, como COMPROMETE, CONDUZIDAS, INDEFERIDO, CONTADO, EXPIRADO, SUBMETE, PROSSEGUE e REGISTRO.}
+  & {\fontsize{10bp}{12bp}\selectfont Sublinhe a ação ou a palavra decisiva conforme a passagem, como PROPOR, PROPOSTA, IMPLICA, DECLARAÇÃO e RECUSA. Na sequência didática do TAC, também ANTES e NÃO.} \\
+% Laranja
+{\fontsize{10bp}{12bp}\selectfont \Destaque{texto}{Laranja}\par
+\Destaque{laranja}{\#EA580C}}
+  & {\fontsize{10bp}{12bp}\selectfont Momento, forma de cabimento ou hipótese em foco, como DESDE LOGO, EM QUALQUER FASE, APÓS A EXPEDIÇÃO DA PORTARIA DE INSTAURAÇÃO DA SINDICÂNCIA e CONFLITOS INTERPESSOAIS.}
+  & {\fontsize{10bp}{12bp}\selectfont Conserve o laranja sem sublinhado. Em ALTERNATIVA OU CONCORRENTE, apenas OU recebe roxo e sublinhado.} \\
+\end{tblr}\par
+\Subtitulo{Cor do traço}
+Como padrão, use sublinhado simples na cor da fonte. Nos sete princípios da autocomposição, a fonte é azul \#0070C0 e o traço é \#111827. Em trechos de competência, o traço pode ser verde-escuro \#047857 sob letras azuis, verdes ou roxas. Aplique a cor do traço independentemente da cor da letra e somente às palavras efetivamente sublinhadas.\par
+
+\clearpage
+\Titulo{Como aplicar os destaques dentro da frase}
+Use os pares abaixo para decidir entre cor, cor com sublinhado e texto corrente. Repita a combinação de cada trecho quando a informação desempenhar a mesma função.\par
+\Subtitulo{A mesma hipótese em dois critérios}
+\Destaque{violeta}{PODE} ser adotado nos casos de \Destaque{laranja}{EXTRAVIO OU DANO A BEM PÚBLICO} que \Destaque{vermelhoEscuro}{NÃO} tenham decorrido de conduta dolosa do funcionário (art. 267-E, parágrafo único).\par
+Cabe em \Sublinhado{verdeVivo}{verdeVivo}{EXTRAVIO} \Sublinhado{roxo}{roxo}{OU} \Sublinhado{verdeVivo}{verdeVivo}{DANO A BEM PÚBLICO} que \Destaque{vermelhoEscuro}{NÃO} tenha decorrido de \Destaque{azul}{CONDUTA DOLOSA} (art. 267-E, parágrafo único)\par
+Em “Hipóteses de cabimento”, toda a expressão EXTRAVIO OU DANO A BEM PÚBLICO é laranja e sem linha, inclusive OU. Em “Vedações e restrições”, sublinhe EXTRAVIO e DANO A BEM PÚBLICO em verde vivo e OU em roxo. Nos dois casos, NÃO recebe vermelho escuro sem linha.\par
+\Subtitulo{Sujeito, objeto, faculdade e ação}
+\Sublinhado{azul}{verdeEscuro}{AUTORIDADE} que tiver \Sublinhado{verdeVivo}{verdeEscuro}{CONHECIMENTO DA IRREGULARIDADE} \Destaque{violeta}{PODE} \Sublinhado{vermelhoVivo}{vermelhoVivo}{PROPOR} a celebração (art. 264, caput)\par
+Sublinhe AUTORIDADE em azul com traço verde-escuro e CONHECIMENTO DA IRREGULARIDADE em verde vivo com o mesmo traço. PODE fica violeta sem linha. PROPOR fica vermelho vivo com linha da mesma cor. Deixe “que tiver”, “a celebração” e a referência em escrita corrente.\par
+\Subtitulo{Ação, vínculo e resultado}
+O \Destaque{vermelhoVivo}{CUMPRIMENTO} das condições \Sublinhado{vermelhoVivo}{vermelhoVivo}{IMPLICA} a \Destaque{verdeVivo}{EXTINÇÃO DA PUNIBILIDADE} (art. 267-J, caput).\par
+CUMPRIMENTO e IMPLICA têm a mesma fonte vermelha viva em caixa alta e negrito. Sublinhe apenas IMPLICA. O efeito EXTINÇÃO DA PUNIBILIDADE fica em verde vivo, sem linha. Em outro critério, o rótulo CUMPRIMENTO que introduz os limites de prazo é azul sem linha.\par
+\Subtitulo{Limite numérico e unidade}
+\Destaque{azul}{CUMPRIMENTO}: \Destaque{vermelhoEscuro}{NÃO} inferior a \Sublinhado{verdeVivo}{verdeVivo}{1 ANO}, \Destaque{vermelhoEscuro}{NEM} superior a \Sublinhado{verdeVivo}{verdeVivo}{2 ANOS} (art. 267-I, parágrafo único).\par
+Sublinhe cada número junto com a unidade em verde vivo e mantenha NÃO e NEM em vermelho escuro sem linha. A duração escrita como bloco “1 A 2 ANOS” é verde-escura e sem linha. Em “PRAZO MÁXIMO DE 2 ANOS”, há uma ocorrência com MÁXIMO e DE 2 ANOS sublinhados e outra com o bloco inteiro sem linha.\par
+\Subtitulo{Exceções de caixa e de ênfase}
+Mantenha “irregularidade” e “funcionário interessado” em minúsculas, cor de corpo e sublinhado simples nas passagens correspondentes do TAC. Em “suas atividades”, some negrito ao mesmo tratamento. Na sequência de perguntas e respostas sobre quando propor o TAC, preserve o negrito de apoio em trechos explicativos e “apurá-la” em minúsculas, vermelho vivo e negrito, sem linha.\par
+Leia a frase antes de marcar palavras repetidas. DESPACHO FUNDAMENTADO é violeta sem linha quando expressa uma exigência para propor a medida e azul sublinhado quando identifica a formalidade do encaminhamento. Artigos, preposições, pontuação e espaços seguem em geral o texto corrente. Preserve a marcação peculiar do modelo quando copiar um trecho idêntico.\par
+\Subtitulo{Conferência e entrega}
+Revise cada célula no Word. Confira os fundos, a ordem dos critérios, as referências e os destaques, inclusive os conectivos e a cor do sublinhado. Entregue a tabela editável com formatação real por trecho, sem códigos de cor, etiquetas, marcadores de Markdown ou legenda adicionada ao quadro.\par
+\Destaque{texto}{Material de entrada.} [Cole aqui o conteúdo ou indique o arquivo a formatar e os institutos que deseja comparar.]\par
+\end{document}
